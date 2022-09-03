@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <title> Ascii-art-web</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <link rel="stylesheet" type="text/css" href="./static/style.css">
+    
+    <title>Ascii-art</title>
+</head>
+<body>
+    <header>
+        <h1 class="heading">Ascii-art-web</h1>
+    </header>
+    <form method="post" action="/ascii-art">
+        <div class="block">
+            <textarea class="text" rows="10" cols="20" placeholder="Type text: Hello A&#128081 world" name="input"></textarea>
+        </div>
+        <div class="banner">
+            <select class="banner_select" name="banner">
+                <option value="standard.txt">standard</option>
+                <option value="shadow.txt">shadow</option>
+                <option value="thinkertoy.txt">thinkertoy</option>
+            </select>
+            <button class="banner_button">Submit</button>
+
+            
+        </div> 
+        <pre class="pre">Ascii-art</br>{{ . }}</pre>
+    </form>
+    
+</body>
+</html>
