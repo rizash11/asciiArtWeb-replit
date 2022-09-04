@@ -9,10 +9,12 @@
     <link rel="stylesheet" type="text/css" href="./static/style.css">
     
     <title>Ascii-art</title>
+
+  
 </head>
 <body>
     <header>
-        <h1 class="heading">Ascii-art-web</h1>
+        <h1 class="heading" href="/">Ascii-art-web</h1>
     </header>
     <form method="post" action="/ascii-art">
         <div class="block">
@@ -24,11 +26,15 @@
                 <option value="shadow.txt">shadow</option>
                 <option value="thinkertoy.txt">thinkertoy</option>
             </select>
+
             <button class="banner_button">Submit</button>
 
             
         </div> 
-        <pre class="pre"></br>{{ . }}</pre>
+        
+        <pre class="pre">
+        </br>{{ . }}
+        </pre>
     </form>
     
 </body>
